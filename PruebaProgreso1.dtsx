@@ -1,0 +1,2380 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/9/2024 7:25:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOPBRYAN"
+  DTS:CreatorName="LAPTOPBRYAN\benji"
+  DTS:DTSID="{D43C3C9E-B6E2-45CB-B1F0-16C84AFD9227}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="12298"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{E3AD4467-89FF-44C8-A472-359D1F510334}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2CB8089C-6966-47CF-8B52-66A0AFB4BC02}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\benji\Desktop\Pruebasaad.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{3E7F132F-20C8-4CCD-A5B9-4D7515CE3BA2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cedula"
+              DTS:DTSID="{9090843F-0D68-4282-9A09-3EB86731D8A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{EE8C1537-F102-43D0-86F4-71BDCA3B0570}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="apellido"
+              DTS:DTSID="{C68165E5-9EAC-4F6A-94F4-8068A27E2F44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="contacto"
+              DTS:DTSID="{8F8EDE1C-D543-4A74-8D6D-50967B699DCB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dinero"
+              DTS:DTSID="{7FA5C1C1-6785-496D-84A7-FC13AEE0F41F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{63D20A04-B59F-419F-84DE-1B28BCDF39E7}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\benji\Desktop\Pruebasaad.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{E5BD9CB1-B156-4BDD-AA86-D949EFCC3557}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cedula"
+              DTS:DTSID="{ED133C42-DA82-46F0-BABF-391FBD501EAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{C2D5228F-1DF6-4681-AEB0-3D1911CD3324}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="apellido"
+              DTS:DTSID="{86A53A2F-496D-4859-93C2-EEC888804F7F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="contacto"
+              DTS:DTSID="{0E081177-965A-4E4A-BDCD-5722C93A6035}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dinero"
+              DTS:DTSID="{D7E2B57F-7471-453A-BE7A-8626112C6CB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fecha"
+              DTS:DTSID="{32C2AD70-3E33-411C-849C-12A5632FD311}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4E527329-79BA-4001-90B8-A8629089125D}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\benji\Desktop\Datos_GestionCLientes.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{F560E0EB-2A65-47B5-B266-C6416BC53547}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cedula"
+              DTS:DTSID="{E49C453B-A960-4CD1-B5DD-F4B0A21338CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{911C3FB0-5FCF-4262-A309-172764923E2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="contacto"
+              DTS:DTSID="{CCC0663B-F073-4224-B157-ACD9FDDB690A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="apellido"
+              DTS:DTSID="{AEDA70A9-FB99-481B-B412-9081D14B50A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="direccion"
+              DTS:DTSID="{E7CC66B9-9536-4131-B03F-F9297E3122C5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{59AA4110-7438-429B-806F-9B0E17EFA5FA}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\benji\Desktop\Datos_GestionCLientes.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{5142C3FD-B983-470A-B710-E890E548B911}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cedula"
+              DTS:DTSID="{98A0715E-AAD2-4DE2-8ECD-9C8B02AA5982}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{316172D9-CEA2-4A43-9ED5-0A51FDF03B56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="contacto"
+              DTS:DTSID="{05E5A174-37BE-44F5-97F2-4AEC26FE3E15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="apellido"
+              DTS:DTSID="{65A9FEE1-9A96-49EF-BB89-46C1DC6FEFF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="direccion"
+              DTS:DTSID="{562A3C60-D117-440B-A378-14B928428E1D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2A256DCE-9499-4919-8221-243E1D256C97}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\benji\Desktop\Pruebasaad.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{A78B40FC-0A2C-438E-99A6-BCF0C12B317A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cedula"
+              DTS:DTSID="{7562AC1D-AF87-42C6-B88F-F591DA205860}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{6567927C-17E9-452B-B18C-1CCAA547D62D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="apellido"
+              DTS:DTSID="{6DF2822F-AD5E-44E3-BEB0-3A87A8595C6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="contacto"
+              DTS:DTSID="{4D9ADC42-7B22-4810-9D29-499F4004AAD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="direccion"
+              DTS:DTSID="{31F0E0A8-B914-476B-8CFB-7FD8AB448883}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{F819BDE5-4C67-47AB-A775-274B663F7BBC}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{F819BDE5-4C67-47AB-A775-274B663F7BBC}LAPTOPBRYAN\SQLEXPRESS.contactCenter;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{8C78133D-00A9-4807-83A2-E700197EDE7F}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{8C78133D-00A9-4807-83A2-E700197EDE7F}LAPTOPBRYAN\SQLEXPRESS.contactCenter 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{47C746A3-851C-4291-8D40-9A44DE161B1B}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{47C746A3-851C-4291-8D40-9A44DE161B1B}LAPTOPBRYAN\SQLEXPRESS.contactCenter 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FF0A8E44-7B52-4117-8974-600E0CEF9062}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{FF0A8E44-7B52-4117-8974-600E0CEF9062}LAPTOPBRYAN\SQLEXPRESS.contactCenter 3;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 4]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{6766A3B6-8388-41C7-BA72-D3F1C659836D}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{6766A3B6-8388-41C7-BA72-D3F1C659836D}LAPTOPBRYAN\SQLEXPRESS.contactCenter 4;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 5]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{537106FB-9218-4638-9A17-2B7D8D683DA7}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{537106FB-9218-4638-9A17-2B7D8D683DA7}LAPTOPBRYAN\SQLEXPRESS.contactCenter 5;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 6]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{2B0C841F-49F0-4B3D-9C35-3347AE80ED54}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.contactCenter 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=contactCenter;Integrated Security=True;Application Name=SSIS-Package-{2B0C841F-49F0-4B3D-9C35-3347AE80ED54}LAPTOPBRYAN\SQLEXPRESS.contactCenter 6;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.gestionClientes]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5FC10F28-087C-473E-910B-3F2578FA685E}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.gestionClientes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=gestionClientes;Integrated Security=True;Application Name=SSIS-Package-{5FC10F28-087C-473E-910B-3F2578FA685E}LAPTOPBRYAN\SQLEXPRESS.gestionClientes;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.gestionClientes 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{43C05E69-7DDA-4B56-9E58-E747D88330C6}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.gestionClientes 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=gestionClientes;Integrated Security=True;Application Name=SSIS-Package-{43C05E69-7DDA-4B56-9E58-E747D88330C6}LAPTOPBRYAN\SQLEXPRESS.gestionClientes 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.gestionClientes 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9E450E80-5E58-41BC-BA6A-D56ABDAD0435}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.gestionClientes 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=gestionClientes;Integrated Security=True;Application Name=SSIS-Package-{9E450E80-5E58-41BC-BA6A-D56ABDAD0435}LAPTOPBRYAN\SQLEXPRESS.gestionClientes 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.gestionClientes 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{D01E935F-F8D6-4A47-A421-EC59829D3F7D}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.gestionClientes 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=gestionClientes;Integrated Security=True;Application Name=SSIS-Package-{D01E935F-F8D6-4A47-A421-EC59829D3F7D}LAPTOPBRYAN\SQLEXPRESS.gestionClientes 3;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{12D08DC3-7784-48DD-B930-6F3037824386}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=respaldoSistemaContable;Integrated Security=True;Application Name=SSIS-Package-{12D08DC3-7784-48DD-B930-6F3037824386}LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{D0A21CF4-FC6A-48EF-A8EE-BABC904BCE6F}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=respaldoSistemaContable;Integrated Security=True;Application Name=SSIS-Package-{D0A21CF4-FC6A-48EF-A8EE-BABC904BCE6F}LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FD331CEF-FE9B-44E0-ABFF-448B1442B43C}"
+      DTS:ObjectName="LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOPBRYAN\SQLEXPRESS;Initial Catalog=respaldoSistemaContable;Integrated Security=True;Application Name=SSIS-Package-{FD331CEF-FE9B-44E0-ABFF-448B1442B43C}LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{77AB740F-3C6E-4325-82B2-BA14758483E0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\Combinación de mezcla"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Combinación de mezcla;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Combina dos flujos de datos ordenados en uno solo mediante la combinación FULL, LEFT o INNER. Se recomienda esta transformación cuando se pueden ordenar los flujos de datos en sus orígenes."
+              name="Combinación de mezcla"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el tipo de combinación que se debe realizar."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número de columnas de la clave de ordenación."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores NULL se tratan como valores iguales."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indica la cantidad máxima solicitada de búferes por entrada antes del bloqueo."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
+                  hasSideEffects="true"
+                  name="Entrada izquierda de combinación de mezcla">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[cedula]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="cedula"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[cedula]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[apellido]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="apellido"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[apellido]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[contacto]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="contacto"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[contacto]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[direccion]"
+                      cachedDataType="nText"
+                      cachedName="direccion"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[direccion]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
+                  hasSideEffects="true"
+                  name="Entrada derecha de combinación de mezcla">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla].Columns[cedula]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="cedula"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar 1.Outputs[Salida de ordenación].Columns[cedula]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla]"
+                  isSorted="true"
+                  name="Salida de combinación de mezcla">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[id]"
+                      name="id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula]"
+                      name="cedula"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[cedula]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[nombre]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[nombre]"
+                      name="nombre">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[nombre]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[apellido]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[apellido]"
+                      name="apellido">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[apellido]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[contacto]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[contacto]"
+                      name="contacto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[contacto]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[direccion]"
+                      dataType="nText"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[direccion]"
+                      name="direccion">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[direccion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula_contacto]"
+                      dataType="wstr"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula_contacto]"
+                      name="cedula_contacto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla].Columns[cedula]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino de ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."respaldo"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.respaldoSistemaContable 2]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[id]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[cedula]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="cedula"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[cedula]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[cedula]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[apellido]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="apellido"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[apellido]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[apellido]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[contacto]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="contacto"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[contacto]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[contacto]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[dinero]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dinero"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[dinero]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[dinero]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[fecha]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fecha"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[fecha]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      name="cedula" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="100"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[apellido]"
+                      dataType="wstr"
+                      length="100"
+                      name="apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[contacto]"
+                      dataType="wstr"
+                      length="15"
+                      name="contacto" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[dinero]"
+                      dataType="r8"
+                      name="dinero" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha]"
+                      dataType="wstr"
+                      length="100"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de ADO NET 1"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino de ADO NET 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."datos_contacto"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 6]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id]"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[cedula]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="cedula"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[cedula]"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[apellido]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="apellido"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[apellido]"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[apellido]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[contacto]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="contacto"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[contacto]"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[contacto]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[direccion]"
+                      cachedDataType="nText"
+                      cachedName="direccion"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[direccion]"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[direccion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      name="cedula" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="100"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[apellido]"
+                      dataType="wstr"
+                      length="100"
+                      name="apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[contacto]"
+                      dataType="wstr"
+                      length="15"
+                      name="contacto" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[direccion]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="direccion" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\División condicional"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="División condicional;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Enruta filas de datos a diferentes salidas según el contenido de los datos. Se usan condiciones (expresiones de SSIS) para especificar las filas que se van a enrutar. Por ejemplo, se usa para separar los registros que deben limpiarse de los registros listos para ser cargados o para enrutar solamente un subconjunto de registros."
+              name="División condicional"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\División condicional.Inputs[Entrada de división condicional]"
+                  description="Entrada en la transformación División condicional"
+                  name="Entrada de división condicional">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\División condicional.Inputs[Entrada de división condicional].Columns[cedula_contacto]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="cedula_contacto"
+                      lineageId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula_contacto]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\División condicional.Outputs[Crear Contacto]"
+                  description="Salida 1 de la transformación División condicional"
+                  errorOrTruncationOperation="Cálculo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Crear Contacto"
+                  synchronousInputId="Package\Tarea Flujo de datos\División condicional.Inputs[Entrada de división condicional]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
+                      name="Expression">[ISNULL](#{Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cedula_contacto]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(cedula_contacto)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\División condicional.Outputs[Salida predeterminada de división condicional]"
+                  description="Salida predeterminada de la transformación División condicional"
+                  exclusionGroup="1"
+                  name="Salida predeterminada de división condicional"
+                  synchronousInputId="Package\Tarea Flujo de datos\División condicional.Inputs[Entrada de división condicional]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\División condicional.Outputs[Salida de error de división condicional]"
+                  description="Salida de error de la transformación División condicional"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de división condicional"
+                  synchronousInputId="Package\Tarea Flujo de datos\División condicional.Inputs[Entrada de división condicional]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Ordenar"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+              name="Ordenar"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación]"
+                  name="Entrada de ordenación">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[cedula]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="cedula"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[cedula]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[apellido]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="apellido"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellido]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[contacto]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="contacto"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[contacto]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[direccion]"
+                      cachedDataType="nText"
+                      cachedName="direccion"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[direccion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación]"
+                  isSorted="true"
+                  name="Salida de ordenación">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[id]"
+                      name="id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[cedula]"
+                      name="cedula"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[cedula]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[nombre]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[nombre]"
+                      name="nombre">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[apellido]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[apellido]"
+                      name="apellido">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellido]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[contacto]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[contacto]"
+                      name="contacto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[contacto]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[direccion]"
+                      dataType="nText"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[direccion]"
+                      name="direccion">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[direccion]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Ordenar 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+              name="Ordenar 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Ordenar 1.Inputs[Entrada de ordenación]"
+                  name="Entrada de ordenación">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar 1.Inputs[Entrada de ordenación].Columns[cedula]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="cedula"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[cedula]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Ordenar 1.Outputs[Salida de ordenación]"
+                  isSorted="true"
+                  name="Salida de ordenación">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar 1.Outputs[Salida de ordenación].Columns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar 1.Outputs[Salida de ordenación].Columns[cedula]"
+                      name="cedula"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[cedula]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen de ADO NET"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT id, cedula, nombre, apellido, contacto, direccion
+FROM   clientes</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.gestionClientes 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.gestionClientes 3]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[id]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[cedula]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[cedula]"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[cedula]"
+                      name="cedula"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellido]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[apellido]"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellido]"
+                      name="apellido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[contacto]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[contacto]"
+                      length="15"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[contacto]"
+                      name="contacto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[direccion]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[direccion]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[direccion]"
+                      name="direccion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      name="cedula" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="100"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[apellido]"
+                      dataType="wstr"
+                      length="100"
+                      name="apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[contacto]"
+                      dataType="wstr"
+                      length="15"
+                      name="contacto" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[direccion]"
+                      dataType="nText"
+                      name="direccion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[cedula]"
+                      name="cedula" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      name="nombre" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[apellido]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[apellido]"
+                      name="apellido" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[contacto]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[contacto]"
+                      name="contacto" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[direccion]"
+                      dataType="nText"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[direccion]"
+                      name="direccion" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de ADO NET 1"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen de ADO NET 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT cedula
+FROM   datos_contacto</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOPBRYAN\SQLEXPRESS.contactCenter 5]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[cedula]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[cedula]"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[cedula]"
+                      name="cedula"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      name="cedula" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[cedula]"
+                      dataType="wstr"
+                      length="13"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[cedula]"
+                      name="cedula" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de archivo plano"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="12298"
+              name="Origen de archivo plano"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[cedula]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[cedula]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[cedula]"
+                      name="cedula"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[nombre]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[nombre]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[apellido]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[apellido]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[apellido]"
+                      name="apellido"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[contacto]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[contacto]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[contacto]"
+                      name="contacto"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[dinero]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[dinero]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[dinero]"
+                      name="dinero"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[fecha]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[fecha]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[fecha]"
+                      name="fecha"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[cedula]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="cedula" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[nombre]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[apellido]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[contacto]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="contacto" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[dinero]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="dinero" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[fecha]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Crear Contacto]"
+              endId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]"
+              name="Crear Contacto"
+              startId="Package\Tarea Flujo de datos\División condicional.Outputs[Crear Contacto]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de combinación de mezcla]"
+              endId="Package\Tarea Flujo de datos\División condicional.Inputs[Entrada de división condicional]"
+              name="Salida de combinación de mezcla"
+              startId="Package\Tarea Flujo de datos\Combinación de mezcla.Outputs[Salida de combinación de mezcla]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de ordenación]"
+              endId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de ordenación1]"
+              endId="Package\Tarea Flujo de datos\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos\Ordenar 1.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
+              endId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET1]"
+              endId="Package\Tarea Flujo de datos\Ordenar 1.Inputs[Entrada de ordenación]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Tarea Flujo de datos\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+              endId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="254.999988600612,142.315787911085" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="193.333333333334,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Origen de archivo plano"
+          TopLeft="220.624990137294,76.6315781059688" />
+        <NodeLayout
+          Size="181.333333333334,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Destino de ADO NET"
+          TopLeft="295.624986784533,177.210524370053" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+          TopLeft="317.291656803961,119.298244772635">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="68.9999966472388,57.9122795974174"
+              Start="0,0"
+              End="68.9999966472388,50.4122795974174">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.9561397987087" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.9561397987087"
+                    Point2="0,28.9561397987087"
+                    Point3="4,28.9561397987087" />
+                  <mssgle:LineSegment
+                    End="64.9999966472388,28.9561397987087" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64.9999966472388,28.9561397987087"
+                    Point2="68.9999966472388,28.9561397987087"
+                    Point3="68.9999966472388,32.9561397987087" />
+                  <mssgle:LineSegment
+                    End="68.9999966472388,50.4122795974174" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Origen de ADO NET"
+          TopLeft="627.499971948565,82.7894727751985" />
+        <NodeLayout
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Origen de ADO NET 1"
+          TopLeft="920.374959124254,84.157893812805" />
+        <NodeLayout
+          Size="118.666666666667,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Ordenar"
+          TopLeft="707.70830944491,162.842103475184" />
+        <NodeLayout
+          Size="128,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Ordenar 1"
+          TopLeft="1013.33329578241,183.368419039283" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
+          TopLeft="715.499971948565,125.456139441865">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51.5416708296787,37.3859640333186"
+              Start="0,0"
+              End="51.5416708296787,29.8859640333186">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.6929820166593" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.6929820166593"
+                    Point2="0,18.6929820166593"
+                    Point3="4,18.6929820166593" />
+                  <mssgle:LineSegment
+                    End="47.5416708296787,18.6929820166593" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.5416708296787,18.6929820166593"
+                    Point2="51.5416708296787,18.6929820166593"
+                    Point3="51.5416708296787,22.6929820166593" />
+                  <mssgle:LineSegment
+                    End="51.5416708296787,29.8859640333186" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET1]"
+          TopLeft="1013.04162579092,126.824560479472">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64.2916699914881,56.5438585598108"
+              Start="0,0"
+              End="64.2916699914881,49.0438585598108">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.2719292799054" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.2719292799054"
+                    Point2="0,28.2719292799054"
+                    Point3="4,28.2719292799054" />
+                  <mssgle:LineSegment
+                    End="60.2916699914881,28.2719292799054" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60.2916699914881,28.2719292799054"
+                    Point2="64.2916699914881,28.2719292799054"
+                    Point3="64.2916699914881,32.2719292799054" />
+                  <mssgle:LineSegment
+                    End="64.2916699914881,49.0438585598108" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="193.333333333334,42"
+          Id="Package\Tarea Flujo de datos\Combinación de mezcla"
+          TopLeft="823.624972926454,253.842102476022" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación]"
+          TopLeft="767.041642778243,205.50877014185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="153.249996814877,48.3333323341713"
+              Start="0,0"
+              End="153.249996814877,40.8333323341713">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1666661670857" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.1666661670857"
+                    Point2="0,24.1666661670857"
+                    Point3="4,24.1666661670857" />
+                  <mssgle:LineSegment
+                    End="149.249996814877,24.1666661670857" />
+                  <mssgle:CubicBezierSegment
+                    Point1="149.249996814877,24.1666661670857"
+                    Point2="153.249996814877,24.1666661670857"
+                    Point3="153.249996814877,28.1666661670857" />
+                  <mssgle:LineSegment
+                    End="153.249996814877,40.8333323341713" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación1]"
+          TopLeft="1077.33329578241,226.035085705949">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-126.152767300399,27.8070167700726"
+              Start="0,0"
+              End="-126.152767300399,20.3070167700726">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.5472671613975" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.5472671613975"
+                    Point2="0,16.5472671613975"
+                    Point3="-4,16.5472671613975" />
+                  <mssgle:LineSegment
+                    End="-122.152767300399,16.5472671613975" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-122.152767300399,16.5472671613975"
+                    Point2="-126.152767300399,16.5472671613975"
+                    Point3="-126.152767300399,20.5472671613975" />
+                  <mssgle:LineSegment
+                    End="-126.152767300399,20.3070167700726" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\División condicional"
+          TopLeft="908.624969126658,332.5263121384" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de combinación de mezcla]"
+          TopLeft="920.29163959312,295.842102476022">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.999996200204,36.6842096623787"
+              Start="0,0"
+              End="74.999996200204,29.1842096623787">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.3421048311893" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.3421048311893"
+                    Point2="0,18.3421048311893"
+                    Point3="4,18.3421048311893" />
+                  <mssgle:LineSegment
+                    End="70.999996200204,18.3421048311893" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70.999996200204,18.3421048311893"
+                    Point2="74.999996200204,18.3421048311893"
+                    Point3="74.999996200204,22.3421048311893" />
+                  <mssgle:LineSegment
+                    End="74.999996200204,29.1842096623787" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="189.333333333334,42.6666666666667"
+          Id="Package\Tarea Flujo de datos\Destino de ADO NET 1"
+          TopLeft="880.374971194194,416.89473303327" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Crear Contacto]"
+          TopLeft="995.291635793324,375.192978805067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.2499979324637,41.7017542282024"
+              Start="0,0"
+              End="-20.2499979324637,34.2017542282024">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.8508771141012" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.8508771141012"
+                    Point2="0,20.8508771141012"
+                    Point3="-4,20.8508771141012" />
+                  <mssgle:LineSegment
+                    End="-16.2499979324637,20.8508771141012" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.2499979324637,20.8508771141012"
+                    Point2="-20.2499979324637,20.8508771141012"
+                    Point3="-20.2499979324637,24.8508771141012" />
+                  <mssgle:LineSegment
+                    End="-20.2499979324637,34.2017542282024" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-43.7445497474818,25.8508771141012,67.2391015625,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Origen de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Origen de ADO NET 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
